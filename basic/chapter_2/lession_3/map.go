@@ -75,7 +75,7 @@ func main() {
 		fmt.Printf("v: %v-%v\n", v, map3[v](1, 6))
 	}
 
-	// 判断是否处在
+	// 判断是否存在
 	val, ok := map3["+"]
 	if ok {
 		fmt.Printf("val: %v\n", val(1, 7)) // val: 8
@@ -83,7 +83,7 @@ func main() {
 		fmt.Println("不存在")
 	}
 
-	// 判断是否处在
+	// 判断是否存在
 	if val, ok := map3["-"]; ok {
 		fmt.Printf("val: %v %v\n", val(8, 1), ok)
 	} else {
