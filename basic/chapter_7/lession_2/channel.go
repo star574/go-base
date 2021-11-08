@@ -1,3 +1,4 @@
+// 包名 
 package main
 
 import (
@@ -9,6 +10,7 @@ import (
 	"time"
 )
 
+// 同步等待
 var sy sync.WaitGroup
 
 // channel 通道 应用类型 没有初始化无法使用 默认值 nil
@@ -80,8 +82,10 @@ func main() {
 	fmt.Printf("slice: %+#v  成功人数: %d\n", slice, len(slice))
 }
 
+// 常量魔法值
 const MagicNum = "88"
 
+// 模拟挖矿
 func Miner(n int, ch chan string) {
 	defer sy.Done()
 	num := rand.Int()

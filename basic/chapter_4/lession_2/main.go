@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-    // 引入mysql依赖 _ 代表不用包里的东西 只要导入就会执行init函数
-    _ "github.com/go-sql-driver/mysql"
+	// 引入mysql依赖 _ 代表不用包里的东西 只要导入就会执行init函数
+	_ "github.com/go-sql-driver/mysql"
 
 	"github.com/star574/go-base/basic/chapter_4/lession_2/test"
-
 )
 
 // 包的初始化
